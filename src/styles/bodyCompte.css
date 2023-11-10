@@ -1,0 +1,32 @@
+.little{
+    background-color: black;
+    font-family: "cantarell" !important;
+}
+.line1{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+}
+.information{
+    line-height: 2;
+}
+
+.newsletter{
+    margin-top: 15%;
+}
+.line0{
+    width: 2px;
+    height: 400px;
+    position: absolute;
+    background-color: white;
+    margin-top : 3%;
+    margin-left: 31%;
+}
+.line{
+    width: 2px;
+    height: 300px;
+    position: absolute;
+    background-color: white;
+    margin-top : 30%;
+    margin-left: 31%;
+}

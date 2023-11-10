@@ -1,0 +1,14 @@
+.bg_eshop{
+    width:100%;
+    
+}
+
+.hero-title{
+    font-family: 'modern_machine';
+    font-style: italic;
+    font-size: 5em;
+    font-weight: bolder;
+    padding-top : 7%;
+    position : absolute;
+    top: 35%;
+}

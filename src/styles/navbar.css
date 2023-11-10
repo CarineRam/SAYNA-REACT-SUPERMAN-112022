@@ -1,0 +1,32 @@
+.nav-link{
+    color:white;
+    font-size:22px ;
+  }
+
+.nav-link:hover{
+  color: white;
+  font-weight:bolder ;
+  }
+  
+  .active{
+    font-weight:bolder ;
+    color: white !important;
+    
+  }
+  
+  nav{
+   background-color: rgba(255, 255, 255, 0.016);
+   .navbar-toggler{
+    background-color: white !important;
+   }
+  }
+
+  .navbar-link-account{
+    color : white;
+    text-decoration: none;
+  }
+
+  .logohome{
+    width: 20%;
+  }
+

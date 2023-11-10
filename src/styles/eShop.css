@@ -1,0 +1,27 @@
+h2{
+    font-family: 'modern_machine';
+    font-size: 3em;
+}
+
+h4{
+    margin-top: 5%;
+}
+
+select{
+    background-color: transparent;
+    color: white;
+    width : 80%;
+    height: 50px;
+    border-bottom : 2px solid;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    font-family: 'rajdhani';
+
+
+}
+select:focus{
+    background-color: black;
+   
+    
+}
