@@ -1,0 +1,24 @@
+.backgroundSuperman {
+    width: 100%;
+  }
+
+.logoDc{
+    position: absolute;
+    top: 45%;
+    left: 20%;
+}
+.superman{
+    font-family: 'modern_machine';
+    font-size: 90px;
+    position: absolute;
+    top: 45%;
+    left: 38%;
+
+}
+.acier{
+    font-family: 'modern_machine';
+    font-size: 50px;
+    top: 60%;
+    left: 40%;
+    position: absolute;
+}

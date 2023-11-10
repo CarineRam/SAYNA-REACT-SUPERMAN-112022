@@ -16,6 +16,7 @@ function Eshop() {
   };
 
   const [products, setProducts] = useState([]);
+  const [search, setSearch] = useState('');
 
   // Lire les données venant de firebase
 
@@ -25,7 +26,6 @@ function Eshop() {
     querySnapshot.forEach((doc) => {
       console.log(doc.id, " => ", doc.data());
       productsArray.push({id:doc.id, ...doc.data()});
-
       setProducts(productsArray);
     })
   }
@@ -33,6 +33,16 @@ function Eshop() {
   useEffect(() => {
     getProducts();
   }, []);
+
+  //Filtre
+
+  const filterResult = (catItem) => {
+    const result = products.filter((curData) => {
+      console.log(curData);
+      return curData.category === catItem;
+    })
+    setProducts(result);
+  }
 
   return (
     <>
@@ -52,15 +62,15 @@ function Eshop() {
             <div>
               <h4>Catégorie</h4>
               <select className='dropdown-list'>
-                <option value="option1">Bestsellers</option>
-                <option value="option2">Goodies</option>
-                <option value="option3">Vêtements</option>
-                <option value="option4">Affiches/Posters</option>
-                <option value="option5">Comics</option>
-                <option value="option6">Multimédia</option>
-                <option value="option7">Equipement</option>
-                <option value="option8">Bijoux</option>
-                <option value="option9">Véhicules</option>
+                <option value="option1" onClick={() => filterResult('bestsellers')} >Bestsellers</option>
+                <option value="option2" onClick={() => filterResult('goodies')}>Goodies</option>
+                <option value="option3" onClick={() => filterResult('vetements')}>Vêtements</option>
+                <option value="option4" onClick={() => filterResult('affiches/postes')}>Affiches/Posters</option>
+                <option value="option5" onClick={() => filterResult('comics')}>Comics</option>
+                <option value="option6" onClick={() => filterResult('multimedia')}>Multimédia</option>
+                <option value="option7" onClick={() => filterResult('equipement')}>Equipement</option>
+                <option value="option8" onClick={() => filterResult('bijoux')}>Bijoux</option>
+                <option value="option9" onClick={() => filterResult('vehicules')}>Véhicules</option>
                 {/* Ajoute autant d'options que nécessaire */}
               </select>
             </div>
@@ -100,7 +110,7 @@ function Eshop() {
             {
               products.length > 1 && (
                 <div className="product-box">
-                  <Products products={products} />
+                  <Products products={products} search={search} />
 
                 </div>
 

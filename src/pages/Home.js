@@ -1,8 +1,13 @@
-import React from 'react'
+import React from 'react';
+import IntroHome from '../components/IntroHome';
+
+
 
 function Home() {
   return (
-    <div>Home</div>
+    <>
+    <IntroHome/>
+    </>
   )
 }
 

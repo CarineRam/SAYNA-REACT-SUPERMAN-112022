@@ -8,6 +8,7 @@ import Eshop from '../pages/Eshop';
 import MonCompte from '../pages/MonCompte';
 import NotFoundPage from '../pages/NotFoundPage';
 import Cart from '../pages/Cart';
+import Commande from '../pages/Commande';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='eshop' element={<Eshop />} />
           <Route path='compte' element={<MonCompte />} />
           <Route path='cart' element={<Cart />} />
+          <Route path='commande' element={<Commande />} />
           <Route path='*' element={<NotFoundPage/>} />
           </Route>
         </Routes>
